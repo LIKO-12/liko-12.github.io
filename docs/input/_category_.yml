@@ -1,0 +1,6 @@
+label: 'Input'
+position: 3
+link:
+  title: Input
+  description: 'Want to get interactions from the user? Here you should dig!'
+  type: generated-index

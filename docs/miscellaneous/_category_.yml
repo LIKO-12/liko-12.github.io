@@ -1,0 +1,6 @@
+label: 'Miscellaneous'
+position: 4
+link:
+  title: Miscellaneous
+  description: 'Random features that were not categorized into another specific section.'
+  type: generated-index
