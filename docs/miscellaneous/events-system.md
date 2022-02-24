@@ -1,6 +1,8 @@
 
 # Events System
 
+The events/callbacks system.
+
 ## Manually pumping events
 
 ### `pullEvent`
