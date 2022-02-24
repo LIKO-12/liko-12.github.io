@@ -244,22 +244,26 @@ enlargedImageData = imageData:enlarge(scale)
 
 Transform the pixel data by applying a function to every pixel.
 
-:::info
-
-The supplied function will be called for every pixel in the pixel data, following scanline order.
-Starting with the top-left corner and going in horizontal lines till the bottom-right corner.
-
-:::
 
 ```lua
 imageData:map(pixelFunction)
 ```
 
-|     Parameter | Type     | Default     | Note                        |
-|--------------:|----------|-------------|-----------------------------|
-| pixelFunction | function | ⚠️ required | check the definition below. |
+|     Parameter | Type            | Default     | Note                        |
+|--------------:|-----------------|-------------|-----------------------------|
+| pixelFunction | [PixelFunction] | ⚠️ required | check the definition below. |
+
+
+#### PixelFunction
+
+A function which is called for every pixel in a pixel data.
 
 :::info
+
+The scanline order is followed.
+Starting with the top-left corner and going in horizontal lines till the bottom-right corner.
+
+:::
 
 The signature of the function is:
 
@@ -279,8 +283,6 @@ end
 |  Return | Type   | Note                                                    |
 |--------:|--------|---------------------------------------------------------|
 | colorId | number | the new pixel value. an integer in the range `[0, 15]`. |
-
-:::
 
 ---
 
@@ -434,4 +436,4 @@ isIt = imageData:typeOf(type)
 [Image]: ./image
 [ImageData]: #
 [Quad]: ./quad
-
+[PixelFunction]: #pixelfunction
