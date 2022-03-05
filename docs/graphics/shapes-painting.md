@@ -9,7 +9,7 @@ For drawing shapes into the screen using code.
 
 ## `color`
 
-### set the active color
+### Set the active color
 
 ```lua
 color(colorId)
@@ -19,7 +19,7 @@ color(colorId)
 |----------:|--------|-------------|-----------------------------|
 |   colorId | number | ⚠️ required | integer in range `[0, 15]`. |
 
-### get the active color
+### Get the active color
 
 ```lua
 id = color()

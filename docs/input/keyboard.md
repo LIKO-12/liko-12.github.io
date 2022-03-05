@@ -47,7 +47,7 @@ events/callbacks than disabling the feature.
 
 :::
 
-#### set the key repeat state
+#### Set the key repeat state
 
 ```lua
 keyrepeat(isEnabled)
@@ -57,7 +57,7 @@ keyrepeat(isEnabled)
 |----------:|---------|-------------|------|
 | isEnabled | boolean | ⚠️ required |      |
 
-#### get the key repeat state
+#### Get the key repeat state
 
 ```lua
 isEnabled = keyrepeat()
@@ -117,7 +117,7 @@ key = scancodetokey(scancode)
 
 Enable/Disable the text input and the onscreen keyboard for the mobile users.
 
-#### set text input state
+#### Set text input state
 
 ```lua
 textinput(isEnabled)
@@ -127,7 +127,7 @@ textinput(isEnabled)
 |----------:|---------|-------------|------|
 | isEnabled | boolean | ⚠️ required |      |
 
-#### get the text input state
+#### Get the text input state
 
 ```lua
 isEnabled = textinput()

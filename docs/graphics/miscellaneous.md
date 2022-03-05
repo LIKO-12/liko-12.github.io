@@ -32,7 +32,7 @@ DiskOS provides a set of standard cursors which are:
 
 :::
 
-### set the current mouse cursor
+### Set the current mouse cursor
 
 ```lua
 cursor(cursorName, alignToPixelGrid)
@@ -43,7 +43,7 @@ cursor(cursorName, alignToPixelGrid)
 |       cursorName | string  | ⚠️ required |      |
 | alignToPixelGrid | boolean | `false`     |      |
 
-### get the current mouse cursor
+### Get the current mouse cursor
 
 ```lua
 cursorName = cursor()
@@ -53,7 +53,7 @@ cursorName = cursor()
 |-----------:|--------|------|
 | cursorName | string |      |
 
-### define a new cursor
+### Define a new cursor
 
 The hotpoint is the point where the cursor actually clicks in the screen coordinates.
 

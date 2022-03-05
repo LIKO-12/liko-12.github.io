@@ -14,7 +14,7 @@ Maps a color in the palette to another color.
 > There are 2 palettes: The Images' Palette which affects images only. And the Drawing Palette which affects all other graphics functions.
 
 
-### map a color to another one
+### Map a color to another one
 
 ```lua
 pal(colorIdA, colorIdB, palette)
@@ -26,7 +26,7 @@ pal(colorIdA, colorIdB, palette)
 |  colorIdB | number               | ⚠️ required | integer in range `[0, 15]`. the color which will replace color A.     |
 |   palette | number, boolean, nil | `nil`       | `0`: Drawing Palette. `1`: Images Palette. `nil`/`false`: both.       |
 
-### reset a color to it's default
+### Reset a color to it's default
 
 ```lua
 pal(colorId, false, palette)
@@ -38,7 +38,7 @@ pal(colorId, false, palette)
 |   `false` | boolean              | ℹ️ literal  |                                                                 |
 |   palette | number, boolean, nil | `nil`       | `0`: Drawing Palette. `1`: Images Palette. `nil`/`false`: both. |
 
-### reset the whole palette
+### Reset the whole palette
 
 ```lua
 pal(false, false, palette)
@@ -58,7 +58,7 @@ Makes a specific color transparent or not, by default the color 0 is transparent
 
 > This only affects images.
 
-### set the transparency of a color
+### Set the transparency of a color
 
 ```lua
 palt(colorId, isTransparent)
@@ -69,7 +69,7 @@ palt(colorId, isTransparent)
 |       colorId | number  | ⚠️ required | integer in range `[0, 15]`. | 
 | isTransparent | boolean | `false`     |                             |
 
-### reset the colors to their default
+### Reset the colors to their default
 
 Which is opaque for all colors except `0`, which is considered transparent.
 
@@ -83,7 +83,7 @@ palt()
 
 Allows you to read and modify the real RGB values of a color in the palette.
 
-### get the RGB values of a color
+### Get the RGB values of a color
 
 ```lua
 r, g, b = colorPalette(colorId)
@@ -99,7 +99,7 @@ r, g, b = colorPalette(colorId)
 |      g | number | green channel, integer in range `[0, 255]`. |
 |      b | number | blue channel, integer in range `[0, 255]`.  |
 
-### set the RGB values of a color
+### Set the RGB values of a color
 
 ```lua
 colorPalette(colorId, r, g, b)
@@ -112,7 +112,7 @@ colorPalette(colorId, r, g, b)
 |         g | number | ⚠️ required | green channel, integer in range `[0, 255]`. |
 |         b | number | ⚠️ required | blue channel, integer in range `[0, 255]`.  |
 
-### reset the palette colors to their defaults
+### Reset the palette colors to their defaults
 
 Which is the PICO-8 palette.
 
@@ -128,7 +128,7 @@ Transforms the drawing operations.
 
 > The transforming operations sums up, to reset check the fifth usage of this function.
 
-### translate (shift) coordinates origin
+### Translate (shift) coordinates origin
 
 Shifts all drawing operations.
 
@@ -142,7 +142,7 @@ cam("translate", x, y)
 |             x | number | ⚠️ required |      |
 |             y | number | ⚠️ required |      |
 
-### scale coordinates
+### Scale coordinates
 
 Scales all the drawing operations.
 
@@ -156,7 +156,7 @@ cam("scale", scaleX, scaleY)
 |    scaleX | number | ⚠️ required | `1` to preserve scale. |
 |    scaleY | number | ⚠️ required | `1` to preserve scale. |
 
-### rotate around coordinates origin
+### Rotate around coordinates origin
 
 ```lua
 cam("rotate", angle)
@@ -167,7 +167,7 @@ cam("rotate", angle)
 | `'rotate'` | string | ℹ️ literal  |             |
 |      angle | number | ⚠️ required | in radians. |
 
-### shear coordinates
+### Shear coordinates
 
 ```lua
 cam("shear", shearX, shearY)
@@ -179,7 +179,7 @@ cam("shear", shearX, shearY)
 |    shearX | number | ⚠️ required |      |
 |    shearY | number | ⚠️ required |      |
 
-### reset all the transformations
+### Reset all the transformations
 
 Resets all the transformations done back to their original state.
 
@@ -193,7 +193,7 @@ cam()
 
 Sets the region that the GPU can draw on.
 
-### enable clipping
+### Enable clipping
 
 > The arguments can be passed in a table.
 
@@ -208,7 +208,7 @@ clip(x, y, width, height)
 |     width | number | ⚠️ required |      |
 |    height | number | ⚠️ required |      |
 
-### disable clipping
+### Disable clipping
 
 ```lua
 clip()

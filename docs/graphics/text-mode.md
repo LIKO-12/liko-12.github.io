@@ -11,7 +11,7 @@ For writing text on the screen.
 
 Prints text to the screen.
 
-### at a specific position on the screen with overflow wrapping
+### At a specific position on the screen with overflow wrapping
 
 ```lua
 print(text, x, y, limit, align, rotation, scaleX, scaleY, originX, originY, shearX, shearY)
@@ -32,7 +32,7 @@ print(text, x, y, limit, align, rotation, scaleX, scaleY, originX, originY, shea
 |    shearX | number | `0`         |                                                  |
 |    shearY | number | `0`         |                                                  |
 
-### at a specific position on the screen without overflow wrapping
+### At a specific position on the screen without overflow wrapping
 
 ```lua
 print(text, x, y, false, false, rotation, scaleX, scaleY, originX, originY, scaleX, scaleY)
@@ -53,7 +53,7 @@ print(text, x, y, false, false, rotation, scaleX, scaleY, originX, originY, scal
 |    shearX | number  | `0`         |             |
 |    shearY | number  | `0`         |             |
 
-### in a terminal fashion
+### In a terminal fashion
 
 ```lua
 print(text)
@@ -63,7 +63,7 @@ print(text)
 |----------:|--------|-------------|------|
 |      text | string | ⚠️ required |      |
 
-### in a terminal fashion with a new line
+### In a terminal fashion with a new line
 
 ```lua
 print(text, false)
@@ -74,7 +74,7 @@ print(text, false)
 |      text | string  | ⚠️ required |             |
 |   `false` | boolean | ℹ️ literal  |             |
 
-### in a terminal fashion without wrapping nor new line
+### In a terminal fashion without wrapping nor new line
 
 ```lua
 print(text, false, true)
@@ -92,7 +92,7 @@ print(text, false, true)
 
 Deletes the last printed character via the 3rd and 4th variants of `print()`, and it updates the cursor position.
 
-### delete the last character
+### Delete the last character
 
 ```lua
 printBackspace(colorId)
@@ -102,7 +102,7 @@ printBackspace(colorId)
 |----------:|--------|--------------|-------------------------------------------------------------------------------|
 |   colorId | number | active color | integer in range `[-1, 15]` where `-1` would indicate transparent background. |
 
-### delete the last character without doing a carriage return
+### Delete the last character without doing a carriage return
 
 By default, a carriage return is done when the start of line is reached. 
 This disables that behaviour.
@@ -124,7 +124,7 @@ Change the print cursor position used by `print()` when in terminal fashion.
 
 > The positions are on a characters grid, the size of the grid can be requested from `termSize()`.
 
-### set cursor position
+### Set cursor position
 
 ```lua
 printCursor(x, y, backgroundColorId)
@@ -136,7 +136,7 @@ printCursor(x, y, backgroundColorId)
 |                 y | number | current position         |                                                                               | 
 | backgroundColorId | number | current background color | integer in range `[-1, 15]` where `-1` would indicate transparent background. |
 
-### get cursor position
+### Get cursor position
 
 ```lua
 x, y, backgroundColorId = printCursor()
