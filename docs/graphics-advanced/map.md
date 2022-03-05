@@ -1,9 +1,15 @@
 
 # Map
 
+A 2D grid of sprites. Can be used to create [tile-based games](https://en.wikipedia.org/wiki/Tiled_rendering).
+
+Usually represents the level or map of a game. Drawn using the map editor.
+
 ## Creation
 
 ### `MapObj`
+
+Construct a new instance of an empty map.
 
 ```lua
 map = MapObj(width, height, spriteSheet)
@@ -19,9 +25,32 @@ map = MapObj(width, height, spriteSheet)
 |-------:|-------|------|
 |    map | [Map] |      |
 
+---
+
+### `TileMap`
+
+A globally available instance for the standard tiles map of any game.
+
+It contains the sprites drawn in the map editor.
+
+```lua
+TileMap:draw(); --draws the map on the screen.
+```
+
+:::caution
+
+Do not destroy this object or render it unusable.
+As it's used by he `map` function.
+
+Doing so would render it also unusable.
+
+:::
+
 ## Methods
 
 ### `map:map`
+
+Transform the tile map by applying a function to every cell.
 
 ```lua
 map:map(cellFunction, x, y, width, height)
@@ -114,6 +143,8 @@ resultMap = map:cut(x, y, width, height)
 
 ### `map:size`
 
+Get the dimensions of the map.
+
 ```lua
 width, height = map:size()
 ```
@@ -127,6 +158,8 @@ width, height = map:size()
 
 ### `map:width`
 
+Get the width of the map.
+
 ```lua
 width = map:width()
 ```
@@ -138,6 +171,8 @@ width = map:width()
 ---
 
 ### `map:height`
+
+Get the height of the map.
 
 ```lua
 height = map:height()
@@ -151,19 +186,21 @@ height = map:height()
 
 ### `map:draw`
 
+Draw the map or a section of the map on the visible screen.
+
 ```lua
 map = map:draw(destinationX, destinationY, sourceX, sourceY, sourceWidth, sourceHeight, scaleX, scaleY, spriteSheet)
 ```
 
-|    Parameter | Type        | Default    | Note       |
-|-------------:|-------------|------------|------------|
-| destinationX | number      | `0`        | in pixels. |
-| destinationY | number      | `0`        | in pixels. |
-|      sourceX | number      | `0`        | in cells.  |
-|      sourceY | number      | `0`        | in cells.  |
-|  sourceWidth | number      | map width  | in cells.  |
-| sourceHeight | number      | map height | in cells.  |
-|  spriteSheet | SpriteSheet | SpriteMap  |            |
+|    Parameter | Type          | Default     | Note       |
+|-------------:|---------------|-------------|------------|
+| destinationX | number        | `0`         | in pixels. |
+| destinationY | number        | `0`         | in pixels. |
+|      sourceX | number        | `0`         | in cells.  |
+|      sourceY | number        | `0`         | in cells.  |
+|  sourceWidth | number        | map width   | in cells.  |
+| sourceHeight | number        | map height  | in cells.  |
+|  spriteSheet | [SpriteSheet] | [SpriteMap] |            |
 
 | Return | Type  | Note                                         |
 |-------:|-------|----------------------------------------------|
@@ -172,6 +209,8 @@ map = map:draw(destinationX, destinationY, sourceX, sourceY, sourceWidth, source
 ---
 
 ### `map:export`
+
+Export the tiles map data into a `.lk12` raw string.
 
 ```lua
 data = map:export()
@@ -184,6 +223,8 @@ data = map:export()
 ---
 
 ### `map:import`
+
+Import the tiles map data into a `.lk12` raw string.
 
 ```lua
 map = map:import(data)
@@ -201,7 +242,8 @@ map = map:import(data)
 
 ### `map:spritebatch`
 
-Enables the use of a spritebatch for the rendering of the map. Which brings a huge performance boost.
+Enable the use of a spritebatch for the rendering of the map.
+Which brings a huge performance boost.
 
 ```lua
 map:spritebatch(usage)
@@ -212,3 +254,5 @@ map:spritebatch(usage)
 
 [Map]: #
 [CellFunction]: #cellfunction
+[SpriteSheet]: ./spritesheet
+[SpriteMap]: ./spritesheet#SpriteMap

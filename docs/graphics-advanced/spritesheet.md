@@ -1,9 +1,27 @@
 
 # SpriteSheet
 
+Can draw "sprites" which are square images with a unified side length
+packed together in a single image called a "sprite-sheet".
+
+The concept might be also known for some as a texture atlas
+which you can read more about in [wikipedia](https://en.wikipedia.org/wiki/Texture_atlas).
+
 ## Creation
 
 ### `spritesheet`
+
+:::important
+
+The `spritesheet` library has to be loaded first.
+
+```lua
+local spritesheet = Library('spritesheet');
+```
+
+:::
+
+Construct a new instance of a sprite-sheet.
 
 ```lua
 sheet = spritesheet(spritesImage, width, height)
@@ -19,9 +37,32 @@ sheet = spritesheet(spritesImage, width, height)
 |-------:|---------------|------|
 |  sheet | [SpriteSheet] |      |
 
+---
+
+### `SpriteMap`
+
+A globally available instance for the standard sprite-sheet of any game.
+
+It contains the sprites drawn in the sprites' editor.
+
+```lua
+SpriteMap:draw(1, 10, 10); --draws the sprite 1 at coordinates (10, 10).
+```
+
+:::caution
+
+Do not destroy this object or render it unusable.
+As it's used in the `Sprite` function, the `map` function and the `TileMap` object.
+
+Doing so would render them also unusable.
+
+:::
+
 ## Methods
 
 ### `sheet:image`
+
+Get the drawable [Image] containing all the sprites like a sheet.
 
 ```lua
 spritesImage = sheet:image() 
@@ -35,6 +76,8 @@ spritesImage = sheet:image()
 
 ### `sheet:data`
 
+Get the [ImageData] object of the [Image] used by the spritesheet.
+
 ```lua
 spritesImageData = sheet:data()
 ```
@@ -46,6 +89,16 @@ spritesImageData = sheet:data()
 ---
 
 ### `sheet:quad`
+
+Get the [Quad] used for a sprite in the sprite-sheet.
+
+:::caution
+
+Do not mutate (change the viewport) of the [Quad] provided.
+
+That would affect the sprite when drawn normally using the sprite-sheet.
+
+:::
 
 ```lua
 spriteQuad = sheet:quad(spriteId)
@@ -63,6 +116,9 @@ spriteQuad = sheet:quad(spriteId)
 
 ### `sheet:rect`
 
+Get the region of the sprite in the sprite-sheet image.
+(Which is equivalent to the viewport of the sprite's quad).
+
 ```lua
 rect = sheet:rect(spriteId)
 ```
@@ -71,13 +127,15 @@ rect = sheet:rect(spriteId)
 |----------:|--------|-------------|------|
 |  spriteId | number | ⚠️ required |      |
 
-| Return | Type   | Note |
-|-------:|--------|------|
-|   rect | [Rect] |      |
+| Return | Type        | Note |
+|-------:|-------------|------|
+|   rect | [Rectangle] |      |
 
 ---
 
 ### `sheet:draw`
+
+Draw a sprite from the sprite-sheet.
 
 ```lua
 sheet = sheet:draw(spriteId, x, y, rotation, scaleX, scaleY)
@@ -100,6 +158,10 @@ sheet = sheet:draw(spriteId, x, y, rotation, scaleX, scaleY)
 
 ### `sheet:extract`
 
+Extract a copy of the pixel data for a specific sprite only.
+
+The resulting [ImageData] object would have the dimensions of a sprite.
+
 ```lua
 spriteImageData = sheet:extract(spriteId)
 ```
@@ -115,6 +177,9 @@ spriteImageData = sheet:extract(spriteId)
 ---
 
 ### `sheet:flag`
+
+Flags are a group of 8 "lamps" (technically bits) that can be set on (1) or off (0)
+for each sprite in the sprites' editor.
 
 #### Get all the flags state in binary
 
@@ -146,3 +211,7 @@ sheet:flag(spriteId, bitfield)
 | spriteImageData | [ImageData] | a unique instance. feel free to mutate. |
 
 [SpriteSheet]: #
+[Image]: ./image
+[ImageData]: ./imagedata
+[Quad]: ./quad
+[Rectangle]: ../miscellaneous/utilities#Rectangle
