@@ -244,7 +244,6 @@ enlargedImageData = imageData:enlarge(scale)
 
 Transform the pixel data by applying a function to every pixel.
 
-
 ```lua
 imageData:map(pixelFunction)
 ```
