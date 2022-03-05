@@ -3,7 +3,7 @@
 
 Which is the real computer system that runs the LIKO-12 program.
 
-## Writing into the console
+## Write into the console
 
 There's a text console which can be used to output debugging information to.
 
@@ -67,7 +67,7 @@ clearClipboard()
 
 ---
 
-## Querying Information
+## Query Information
 
 
 ### `getFPS`

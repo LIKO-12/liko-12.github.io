@@ -294,13 +294,3 @@ Controls(type)
 | Parameter | Type   | Default     | Note                                                             |
 |----------:|--------|-------------|------------------------------------------------------------------|
 |      type | string | `'gamepad'` | enum: `'gamepad'`, `'keyboard'`, `'touch'`, `'mouse'`, `'none'`. |
-
-### `exit`
-
-```lua
-exit(message)
-```
-
-| Parameter | Type        | Default | Note            |
-|----------:|-------------|---------|-----------------|
-|   message | string, nil | `nil`   | reason of exit. |

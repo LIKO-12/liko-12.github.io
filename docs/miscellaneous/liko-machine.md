@@ -3,6 +3,8 @@
 
 A fancy way to refer to the LIKO-12 application.
 
+Which from a technical perspective can be seen as a virtual machine.
+
 ## Machine events
 
 ### `_update`
@@ -36,7 +38,7 @@ end
 |----------:|--------|-------------------------------------------|
 | deltaTime | number | since last call. in seconds. float value. |
 
-## Controlling the machine
+## Control the machine
 
 ### `sleep`
 
@@ -49,6 +51,20 @@ sleep(duration)
 | Parameter | Type   | Default | Note |
 |----------:|--------|---------|------|
 |  duration | number | `0`     |      |
+
+---
+
+### `exit`
+
+Terminate the running game.
+
+```lua
+exit(message)
+```
+
+| Parameter | Type        | Default | Note            |
+|----------:|-------------|---------|-----------------|
+|   message | string, nil | `nil`   | reason of exit. |
 
 ---
 
@@ -70,17 +86,17 @@ shutdown()
 
 ### `reboot`
 
+Restart LIKO-12.
+
 :::caution
 
 Be always cautions to save your modifications before running code that might use this function.
 
 :::
 
-Restart LIKO-12.
-
 #### Soft restart
 
-Restarts the machine by reloading itself.
+Have the machine restarted by making it reload itself.
 
 ```lua
 reboot()
@@ -88,7 +104,7 @@ reboot()
 
 #### Hard restart
 
-Restarts the whole application. More effective in resolving some glitches.
+Have the whole application restarted. More effective in resolving some glitches.
 
 ```lua
 reboot(true)

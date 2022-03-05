@@ -5,7 +5,7 @@ An integrated GIF recorder within LIKO-12.
 
 Optimized to take some advantage of the low-resolution and limited colors' palette.
 
-## Controlling the GIF recorder with code
+## Control the GIF recorder with code
 
 Useful for creating perfectly looping recordings.
 
