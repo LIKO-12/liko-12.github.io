@@ -20,7 +20,7 @@ mouseX, mouseY = getMPos()
 |  Return | Type   | Note |
 |--------:|--------|------|
 |  mouseX | number |      |
-| mouse Y | number |      |
+|  mouseY | number |      |
 
 ### `isMDown`
 
