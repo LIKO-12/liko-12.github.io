@@ -9,12 +9,6 @@
 
 Set it to `true` to disable the pause screen.
 
-## `SpriteMap`
-
-## `TileMap`
-
-## `MapObj`
-
 ## `SFXS`
 
 ## `SfxObj`
