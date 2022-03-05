@@ -5,6 +5,16 @@ The events/callbacks system.
 
 ## Manually pumping events
 
+:::caution
+
+Manually pumping events would stop the [virtual gamepads][GamePad] input
+from working properly.
+
+To have them functioning again follow the
+[last section in this page](#supporting-virtual-gamepad-input-while-manually-pumping-events).
+
+:::
+
 ### `pullEvent`
 
 Pull an event.
@@ -75,3 +85,75 @@ Clear the events stack.
 ```lua
 clearEStack()
 ```
+
+## Supporting virtual GamePad input while manually pumping events
+
+For [GamePad] input to still work properly the following functions
+has to be called in their corresponding events.
+
+
+### `__BTNUpdate`
+
+To be called on every `update` event.
+
+```lua
+__BTNUpdate(deltaTime)
+```
+
+| Parameter | Type   | Default     | Note                         |
+|----------:|--------|-------------|------------------------------|
+| deltaTime | number | ⚠️ required | since last call. in seconds. |
+
+### `__BTNKeypressed`
+
+To be called on every `keypressed` event.
+
+```lua
+__BTNKeypressed(keyName, isRepeat)
+```
+
+| Parameter | Type    | Default     | Note |
+|----------:|---------|-------------|------|
+|   keyName | string  | ⚠️ required |      |
+|  isRepeat | boolean | `false`     |      |
+
+### `__BTNTouchControl`
+
+To be called on every `touchcontrol` event.
+
+:::note
+
+The `touchcontrol` event is an undocumented event that exists. 
+
+:::
+
+```lua
+__BTNTouchControl(state, buttonId)
+```
+
+| Parameter | Type    | Default     | Note |
+|----------:|---------|-------------|------|
+|     state | boolean | ⚠️ required |      |
+|  buttonId | number  | ⚠️ required |      |
+
+### `__BTNGamepad`
+
+To be called on every `gamepad` event.
+
+:::note
+
+The `gamepad` event is an undocumented event that exists.
+
+:::
+
+```lua
+__BTNGamepad(state, buttonId, gamepadId)
+```
+
+| Parameter | Type    | Default     | Note |
+|----------:|---------|-------------|------|
+|     state | boolean | ⚠️ required |      |
+|  buttonId | number  | ⚠️ required |      |
+| gamepadId | number  | ⚠️ required |      |
+
+[GamePad]: ../input/gamepad

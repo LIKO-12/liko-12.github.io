@@ -4,7 +4,7 @@
 ### `dofile`
 
 ```lua
-... = dofile(path)
+local ... = dofile(path)
 ```
 
 | Parameter | Type   | Default     | Note |
@@ -20,97 +20,6 @@
 ```lua
 pause()
 ```
-
-### `getBtnName`
-
-Get the name of the key which is configured for an emulated gamepad button.
-
-```lua
-keyName = getBtnName(buttonId, playerId)
-```
-
-| Parameter | Type   | Default     | Note                       |
-|----------:|--------|-------------|----------------------------|
-|  buttonId | number | ⚠️ required | integer in range `[1, 7]`. |
-|  playerId | number | `1`         | 1-based.                   |
-
-|  Return | Type   | Note |
-|--------:|--------|------|
-| keyName | string |      |
-
-### `btn`
-
-```lua
-isDown = btn(buttonId, playerId)
-```
-
-| Parameter | Type   | Default     | Note                       |
-|----------:|--------|-------------|----------------------------|
-|  buttonId | number | ⚠️ required | integer in range `[1, 7]`. |
-|  playerId | number | `1`         | 1-based.                   |
-
-| Return | Type    | Note |
-|-------:|---------|------|
-| isDown | boolean |      |
-
-### `btnp`
-
-```lua
-wasPressed = btnp(buttonId, playerId)
-```
-
-| Parameter | Type   | Default     | Note                       |
-|----------:|--------|-------------|----------------------------|
-|  buttonId | number | ⚠️ required | integer in range `[1, 7]`. |
-|  playerId | number | `1`         | 1-based.                   |
-
-|     Return | Type   | Note |
-|-----------:|--------|------|
-| wasPressed | button |      |
-
-### `__BTNUpdate`
-
-```lua
-__BTNUpdate(deltaTime)
-```
-
-| Parameter | Type   | Default     | Note                         |
-|----------:|--------|-------------|------------------------------|
-| deltaTime | number | ⚠️ required | since last call. in seconds. |
-
-### `__BTNKeypressed`
-
-```lua
-__BTNKeypressed(keyName, isRepeat)
-```
-
-| Parameter | Type    | Default     | Note |
-|----------:|---------|-------------|------|
-|   keyName | string  | ⚠️ required |      |
-|  isRepeat | boolean | `false`     |      |
-
-### `__BTNTouchControl`
-
-```lua
-__BTNTouchControl(state, buttonId)
-```
-
-| Parameter | Type    | Default     | Note |
-|----------:|---------|-------------|------|
-|     state | boolean | ⚠️ required |      |
-|  buttonId | number  | ⚠️ required |      |
-
-### `__BTNGamepad`
-
-```lua
-__BTNGamepad(state, buttonId, gamepadId)
-```
-
-| Parameter | Type    | Default     | Note |
-|----------:|---------|-------------|------|
-|     state | boolean | ⚠️ required |      |
-|  buttonId | number  | ⚠️ required |      |
-| gamepadId | number  | ⚠️ required |      |
 
 ### `SaveID`
 
