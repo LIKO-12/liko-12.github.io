@@ -1,9 +1,8 @@
 ---
+title: Transformations
 sidebar_position: 3
 
 ---
-
-# Transformations
 
 For transforming the colors and the coordinates' system.
 

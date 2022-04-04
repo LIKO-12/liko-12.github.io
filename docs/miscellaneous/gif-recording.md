@@ -1,5 +1,6 @@
-
-# GIF Recording
+---
+title: GIF Recording
+---
 
 An integrated GIF recorder within LIKO-12.
 

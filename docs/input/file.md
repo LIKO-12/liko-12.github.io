@@ -1,9 +1,8 @@
 ---
+title: File
 sidebar_position: 4
 
 ---
-
-# File
 
 It's possible to receive file contents when a file is dropped into
 the window while your game is running.

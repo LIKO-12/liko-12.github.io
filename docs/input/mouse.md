@@ -1,9 +1,8 @@
 ---
+title: Mouse
 sidebar_position: 1
 
 ---
-
-# Mouse
 
 The standard pointer input device for desktops and laptops users.
 

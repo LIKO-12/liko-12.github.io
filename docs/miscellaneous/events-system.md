@@ -1,5 +1,7 @@
+---
+title: Events System
 
-# Events System
+---
 
 The events/callbacks system.
 

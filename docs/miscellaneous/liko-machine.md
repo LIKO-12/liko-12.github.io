@@ -1,5 +1,7 @@
+---
+title: LIKO-12 Machine
 
-# LIKO-12 Machine
+---
 
 A fancy way to refer to the LIKO-12 application.
 

@@ -1,9 +1,8 @@
 ---
+title: Touch
 sidebar_position: 2
 
 ---
-
-# Touch
 
 The standard input device for phones, tablets and other touch devices.
 

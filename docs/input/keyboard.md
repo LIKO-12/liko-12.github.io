@@ -1,9 +1,8 @@
 ---
+title: Keyboard
 sidebar_position: 3
 
 ---
-
-# Keyboard
 
 The standard text input method on desktop and laptop devices.
 

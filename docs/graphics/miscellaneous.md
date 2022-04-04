@@ -1,9 +1,8 @@
 ---
+title: Miscellaneous
 sidebar_position: 6
 
 ---
-
-# Miscellaneous
 
 Miscellaneous features related to graphics but couldn't be categorized into a specific topic.
 

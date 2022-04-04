@@ -1,5 +1,7 @@
+---
+title: Using Libraries
 
-# Using Libraries
+---
 
 There's a set of libraries shipped with LIKO-12 to be available for all games that request them.
 

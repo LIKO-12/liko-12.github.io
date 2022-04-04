@@ -1,9 +1,8 @@
 ---
+title: Text Mode (Printing)
 sidebar_position: 2
 
 ---
-
-# Text Mode (Printing)
 
 For writing text on the screen.
 

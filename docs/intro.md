@@ -1,8 +1,7 @@
 ---
-id: 'intro'
+title: Introduction
+sidebar_position: 1
 
 ---
 
-# Intro
-
-TODO: Get this file removed
+Welcome to the *work in progress* reference for LIKO-12.

@@ -1,5 +1,7 @@
+---
+title: Utilities
 
-# Utilities
+---
 
 Utility functions for aiding in writing common logic.
 

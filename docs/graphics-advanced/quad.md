@@ -1,5 +1,7 @@
+---
+title: Quad
 
-# Quad
+---
 
 Represents a region/part of an image.
 

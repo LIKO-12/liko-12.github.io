@@ -1,9 +1,8 @@
 ---
+title: Querying Dimensions
 sidebar_position: 5
 
 ---
-
-# Querying Dimensions
 
 For querying the dimensions of the screen, font and terminal.
 

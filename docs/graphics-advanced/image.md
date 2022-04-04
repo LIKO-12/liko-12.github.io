@@ -1,5 +1,7 @@
+---
+title: Image
 
-# Image
+---
 
 An immutable drawable 2-dimensional array of pixels data.
 

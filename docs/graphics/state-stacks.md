@@ -1,9 +1,8 @@
 ---
+title: State Stacks
 sidebar_position: 4
 
 ---
-
-# State Stacks
 
 For backing up graphics states using stacks.
 

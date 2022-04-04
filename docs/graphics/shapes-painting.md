@@ -1,9 +1,8 @@
 ---
+title: Shapes Painting (Drawing)
 sidebar_position: 1
 
 ---
-
-# Shapes Painting (Drawing)
 
 For drawing shapes into the screen using code.
 

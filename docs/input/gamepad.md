@@ -1,9 +1,8 @@
 ---
+title: GamePad
 sidebar_position: 1
 
 ---
-
-# GamePad
 
 The universal virtual control unit of LIKO-12.
 Which is emulated using other methods of input.

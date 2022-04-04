@@ -1,5 +1,7 @@
+---
+title: ImageData
 
-# ImageData
+---
 
 A mutable non-drawable 2-dimensional array of pixel data.
 

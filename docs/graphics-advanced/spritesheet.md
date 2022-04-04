@@ -1,5 +1,6 @@
-
-# SpriteSheet
+---
+title: SpriteSheet
+---
 
 Can draw "sprites" which are square images with a unified side length
 packed together in a single image called a "sprite-sheet".

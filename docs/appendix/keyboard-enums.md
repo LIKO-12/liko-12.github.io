@@ -1,5 +1,7 @@
+---
+title: Keys Enum
 
-# Keys Enum
+---
 
 ## Key constants
 

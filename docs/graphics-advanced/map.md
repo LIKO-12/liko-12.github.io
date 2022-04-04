@@ -1,5 +1,7 @@
+---
+title: Map
 
-# Map
+---
 
 A 2D grid of sprites. Can be used to create [tile-based games](https://en.wikipedia.org/wiki/Tiled_rendering).
 

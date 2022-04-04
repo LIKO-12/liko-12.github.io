@@ -1,5 +1,7 @@
+---
+title: Spritebatch
 
-# Spritebatch
+---
 
 Allows drawing a batch of sprites (quads (regions)) from an image in a single call.
 
