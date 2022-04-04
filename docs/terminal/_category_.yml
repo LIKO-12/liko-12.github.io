@@ -1,0 +1,6 @@
+label: 'Terminal'
+position: 2
+link:
+  title: Terminal
+  description: 'The command line interface similar to old-school computers and Linux systems'
+  type: generated-index

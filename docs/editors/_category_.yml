@@ -1,0 +1,6 @@
+label: 'Editors'
+position: 3
+link:
+  title: Editors
+  description: 'Graphical tools for various purposes.'
+  type: generated-index
