@@ -38,7 +38,7 @@ Various shorthands are available to save the need of passing `sourceWidth` and `
 
 - [`image:quad`](./image#imagequad).
 - [`imagedata:quad`](./imagedata#imagedataquad).
-- [`spritebatch:quad`](./sprtebatch#spritebatchquad).
+- [`spritebatch:quad`](./spritebatch#spritebatchquad).
 
 ## Usage
 
