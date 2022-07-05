@@ -4,32 +4,31 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Code in Lua',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        An easy to learn scripting language.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Written in Lua',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The same language you use in the application is used to write the application itself.
+        This opens the opportunity to hack the application.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Available on multiple platforms',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Developed on Windows and supports Linux.
+        Experimental supports for Android and macOS is also available.
       </>
     ),
   },
