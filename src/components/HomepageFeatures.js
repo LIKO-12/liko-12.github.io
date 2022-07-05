@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Code in Lua',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/placeholder.svg').default,
     description: (
       <>
         An easy to learn scripting language.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Written in Lua',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/placeholder.svg').default,
     description: (
       <>
         The same language you use in the application is used to write the application itself.
@@ -24,7 +24,7 @@ const FeatureList = [
   },
   {
     title: 'Available on multiple platforms',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/placeholder.svg').default,
     description: (
       <>
         Developed on Windows and supports Linux.
