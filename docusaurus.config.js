@@ -78,7 +78,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial', // TODO: Tweak this.
+                label: 'Introduction', // TODO: Tweak this.
                 to: '/docs/intro',
               },
             ],
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/adjqkd639F',
               },
               {
                 label: 'Twitter',
