@@ -1,5 +1,5 @@
 ---
-title: Shapes Painting (Drawing)
+title: Drawing Shapes
 sidebar_position: 1
 
 ---
