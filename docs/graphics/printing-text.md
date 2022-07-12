@@ -1,5 +1,5 @@
 ---
-title: Text Mode (Printing)
+title: Printing Text
 sidebar_position: 2
 
 ---
