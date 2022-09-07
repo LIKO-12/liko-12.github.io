@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: The privacy policy of LIKO-12 and it's website.
 ---
 
 # Privacy Policy
