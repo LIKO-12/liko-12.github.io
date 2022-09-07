@@ -1,39 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'LIKO-12',
-  tagline: 'An open-source fantasy computer',
-  url: 'https://liko-12.github.io/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'Rami Sabbagh', // Usually your GitHub org/user name.
-  projectName: 'LIKO-12', // Usually your repo name.
+  title: "LIKO-12",
+  tagline: "An open-source fantasy computer",
+  url: "https://liko-12.github.io/",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "Rami Sabbagh", // Usually your GitHub org/user name.
+  projectName: "LIKO-12", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/LIKO-12/LIKO-12.github.io/tree/main/docs/',
+          editUrl:
+            "https://github.com/LIKO-12/LIKO-12.github.io/tree/main/docs/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo. // TODO: Remove the blog.
           editUrl:
-            'https://github.com/LIKO-12/LIKO-12.github.io/tree/main/blog/',
+            "https://github.com/LIKO-12/LIKO-12.github.io/tree/main/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -43,7 +44,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: true,
       },
       tableOfContents: {
@@ -51,61 +52,65 @@ const config = {
         maxHeadingLevel: 4,
       },
       navbar: {
-        title: 'LIKO-12',
+        title: "LIKO-12",
         logo: {
-          alt: 'LIKO-12 Icon',
-          src: 'img/logo.svg',
+          alt: "LIKO-12 Icon",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Reference',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Reference",
           },
-          {to: '/blog', label: 'Blog', position: 'left'}, // TODO: Remove the blog.
+          { to: "/blog", label: "Blog", position: "left" }, // TODO: Remove the blog.
           {
-            href: 'https://github.com/LIKO-12/LIKO-12',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/LIKO-12/LIKO-12",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Introduction', // TODO: Tweak this.
-                to: '/docs/intro',
+                label: "Introduction", // TODO: Tweak this.
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.gg/adjqkd639F',
+                label: "Discord",
+                href: "https://discord.gg/adjqkd639F",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/rami_sab07',
+                label: "Twitter",
+                href: "https://twitter.com/rami_sab07",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog', // TODO: Remove the blog.
-                to: '/blog',
+                label: "Privacy Policy",
+                to: "/privacy-policy",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/LIKO-12/LIKO-12',
+                label: "Blog", // TODO: Remove the blog.
+                to: "/blog",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/LIKO-12/LIKO-12",
               },
             ],
           },
@@ -115,7 +120,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['lua'],
+        additionalLanguages: ["lua"],
       },
     }),
 };
