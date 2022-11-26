@@ -4,6 +4,7 @@ sidebar_position: 2
 
 ---
 
+For drawing individual sprites and the map into the screen.
 
 ## `Sprite`
 
