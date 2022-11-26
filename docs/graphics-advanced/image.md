@@ -126,7 +126,7 @@ createdQuad = image:quad(x, y, width, height)
 
 ### `image:data`
 
-Returns the imagedata object of this image, which can be used to set and get pixels of the image.
+Get the imagedata object of this image, which can be used to set and get pixels of the image.
 
 :::note
 
@@ -204,7 +204,7 @@ objectType = image:type()
 
 ### `image:typeOf`
 
-Checks whether an object is of a certain type. If the object has the type with the specified name in its hierarchy, this function will return true.
+Check whether an object is of a certain type. If the object has the type with the specified name in its hierarchy, this function will return true.
 
 :::warning
 

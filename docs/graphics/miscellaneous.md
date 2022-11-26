@@ -8,7 +8,7 @@ Miscellaneous features related to graphics but couldn't be categorized into a sp
 
 ## `flip`
 
-Waits till the screen is applied and shown to the user, helpful when doing some loading operations.
+Wait till the screen is applied and shown to the user. Helpful when doing some loading operations.
 
 ```lua
 flip()
@@ -18,7 +18,7 @@ flip()
 
 ## `cursor`
 
-Sets the current active mouse cursor, or creates a new one.
+Set the current active mouse cursor or create a new one.
 
 By default, the cursor is free from the pixelated screen, as it can set in a place between 2 pixels.
 This was to keep the smooth movement of the mouse, at the cost of losing some of the retro feeling.
@@ -58,7 +58,7 @@ The hotpoint is the point where the cursor actually clicks in the screen coordin
 
 :::warning
 
-Overriding any of the standard cursors would override it to DiskOS.
+Overriding any of the standard cursors would override for DiskOS.
 And thus a LIKO-12 reboot would be required to reload the original ones.
 
 :::

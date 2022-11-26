@@ -32,7 +32,7 @@ id = color()
 
 ## `clear`
 
-Clears the screen and fills it with a specific color, useful when clearing the screen for a new frame.
+Clear the screen and fills it with a specific color, useful when clearing the screen for a new frame.
 
 ```lua
 clear(colorId)
@@ -46,7 +46,7 @@ clear(colorId)
 
 ## `point`
 
-Draws point(s) on the screen.
+Draw point(s) on the screen.
 
 ```lua
 point(x, y, ..., colorId)
@@ -63,7 +63,7 @@ point(x, y, ..., colorId)
 
 ## `line`
 
-Draws line(s) on the screen.
+Draw a line(s) on the screen.
 
 ```lua
 line(x1, y1, x2, y2, ..., colorId)
@@ -82,7 +82,7 @@ line(x1, y1, x2, y2, ..., colorId)
 
 ## `circle`
 
-Draws a circle on the screen.
+Draw a circle on the screen.
 
 > The arguments can be passed in a table.
 
@@ -103,7 +103,7 @@ circle(centerX, centerY, radius, isOutlineOnly, colorId, segmentsCount)
 
 ## `ellipse`
 
-Draws an ellipse on the screen.
+Draw an ellipse on the screen.
 
 > The arguments can be passed in a table
 
@@ -125,7 +125,7 @@ ellipse(centerX, centerY, radiusX, radiusY, isOutlineOnly, colorId, segmentsCoun
 
 ## `triangle`
 
-Draws a triangle on the screen.
+Draw a triangle on the screen.
 
 > The arguments can be passed in a table
 
@@ -148,7 +148,7 @@ triangle(x1, y1, x2, y2, x3, y3, l, c)
 
 ## `rect`
 
-Draws a rectangle on the screen.
+Draw a rectangle on the screen.
 
 > The arguments can be passed in a table
 
@@ -169,7 +169,7 @@ rect(x, y, width, height, isOutlineOnly, colorId)
 
 ## `polygon`
 
-Draws a polygon on the screen.
+Draw a polygon on the screen.
 
 ```lua
 polygon(x1, y1, x2, y2, x3, y3, ..., colorId)

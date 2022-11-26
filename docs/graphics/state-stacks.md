@@ -10,7 +10,7 @@ For backing up graphics states using stacks.
 
 ### `pushMatrix`
 
-Pushes the current active camera transformations to the MatrixStack.
+Push the current active camera transformations to the MatrixStack.
 
 ```lua
 pushMatrix()
@@ -20,7 +20,7 @@ pushMatrix()
 
 ### `popMatrix`
 
-Pops the last cam transformations from the MatrixStack.
+Pop the last cam transformations from the MatrixStack.
 
 ```lua
 popMatrix()
@@ -30,7 +30,7 @@ popMatrix()
 
 ### `clearMatrixStack`
 
-Clears the matrix stack (By calling `popMatrix()`).
+Clear the matrix stack (By calling `popMatrix()`).
 
 ```lua
 clearMatrixStack()
@@ -42,7 +42,7 @@ clearMatrixStack()
 
 ### `pushColor`
 
-Pushes the current active color to the ColorStack.
+Push the current active color to the ColorStack.
 
 ```lua
 pushColor()
@@ -52,7 +52,7 @@ pushColor()
 
 ### `popColor`
 
-Pops the last active color from the ColorStack.
+Pop the last active color from the ColorStack.
 
 ```lua
 popColor()
@@ -64,7 +64,7 @@ popColor()
 
 ### `pushPalette`
 
-Pushes the current color mapping and transparent colors list to the palettes stack.
+Push the current color mapping and transparent colors list to the palettes stack.
 
 ```lua
 pushPalette()

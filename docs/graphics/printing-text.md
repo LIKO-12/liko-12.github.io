@@ -8,7 +8,7 @@ For writing text on the screen.
 
 ## `print`
 
-Prints text to the screen.
+Print text to the screen.
 
 ### At a specific position on the screen with overflow wrapping
 
@@ -89,7 +89,7 @@ print(text, false, true)
 
 ## `printBackspace`
 
-Deletes the last printed character via the 3rd and 4th variants of `print()`, and it updates the cursor position.
+Delete the last printed character via the 3rd and 4th variants of `print()` and update the cursor position.
 
 ### Delete the last character
 

@@ -1,6 +1,7 @@
 ---
 title: Windows
-description: Instructions for installation on Windows systems.
+description: Instructions for running LIKO-12 on Windows.
+sidebar_position: 1
 ---
 
 ## Get a release

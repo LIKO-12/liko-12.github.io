@@ -108,7 +108,7 @@ Custom fonts can change the output values.
 
 ### `termWidth`
 
-Returns width of the terminal in characters.
+Get the width of the terminal in characters.
 
 ```lua
 w = termWidth()
@@ -136,7 +136,7 @@ height = termHeight()
 
 ### `termSize`
 
-Returns size of the terminal in characters.
+Get the size of the terminal in characters.
 
 ```lua
 w, h = termSize()

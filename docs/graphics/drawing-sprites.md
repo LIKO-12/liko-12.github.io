@@ -8,7 +8,7 @@ For drawing individual sprites and the map into the screen.
 
 ## `Sprite`
 
-Draws a single 8x8 sprite into the screen.
+Draw a single 8x8 sprite into the screen.
 
 ```lua
 Sprite(spriteId, x, y, rotation, scaleX, scaleY, spriteSheet)
@@ -26,7 +26,7 @@ Sprite(spriteId, x, y, rotation, scaleX, scaleY, spriteSheet)
 
 ## `SpriteGroup`
 
-Allows to draw a sprite larger than 8x8 by composing multiple 8x8 sprites together.
+Draw a sprite larger than 8x8 by composing multiple 8x8 sprites together.
 
 ```lua
 SpriteGroup(spriteId, x, y, width, height, scaleX, scaleY, rotation, spriteSheet)
@@ -47,7 +47,7 @@ SpriteGroup(spriteId, x, y, width, height, scaleX, scaleY, rotation, spriteSheet
 
 ## `map`
 
-For drawing the game's tile map. (Uses the map edited in the tile map editor).
+Draw the game's tile map. (The one edited in the tile map editor).
 
 ```lua
 map(destinationX, destinationY, sourceX, sourceY, sourceWidth, sourceHeight, scaleX, scaleY, spriteSheet)

@@ -8,7 +8,7 @@ For transforming the colors and the coordinates' system.
 
 ## `pal`
 
-Maps a color in the palette to another color.
+Map a color in the palette to another color.
 
 > There are 2 palettes: The Images' Palette which affects images only. And the Drawing Palette which affects all other graphics functions.
 
@@ -53,7 +53,7 @@ pal(false, false, palette)
 
 ## `palt`
 
-Makes a specific color transparent or not, by default the color 0 is transparent.
+Make a specific color transparent or not. By default the color 0 is transparent.
 
 > This only affects images.
 
@@ -80,7 +80,7 @@ palt()
 
 ## `colorPalette`
 
-Allows you to read and modify the real RGB values of a color in the palette.
+Read and modify the real RGB values of a color in the palette.
 
 ### Get the RGB values of a color
 
@@ -123,13 +123,13 @@ colorPalette()
 
 ## `cam`
 
-Transforms the drawing operations.
+Transform the drawing operations.
 
 > The transforming operations sums up, to reset check the fifth usage of this function.
 
 ### Translate (shift) coordinates origin
 
-Shifts all drawing operations.
+Shift all drawing operations.
 
 ```lua
 cam("translate", x, y)
@@ -143,7 +143,7 @@ cam("translate", x, y)
 
 ### Scale coordinates
 
-Scales all the drawing operations.
+Scale all the drawing operations.
 
 ```lua
 cam("scale", scaleX, scaleY)
@@ -180,7 +180,7 @@ cam("shear", shearX, shearY)
 
 ### Reset all the transformations
 
-Resets all the transformations done back to their original state.
+Reset all the transformations done back to their original state.
 
 ```lua
 cam()
@@ -190,7 +190,7 @@ cam()
 
 ## `clip`
 
-Sets the region that the GPU can draw on.
+Set the region that can be drawn on.
 
 ### Enable clipping
 
