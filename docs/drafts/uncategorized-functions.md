@@ -75,23 +75,6 @@ data = LoadData()
 |-------:|--------|-----------------------------------------------------|
 |   data | string | an empty string when no data has been saved before. |
 
-## `map`
-
-```lua
-map(destinationX, destinationY, sourceX, sourceY, sourceWidth, sourceHeight, scaleX, scaleY, spriteSheet)
-```
-
-|    Parameter | Type        | Default    | Note       |
-|-------------:|-------------|------------|------------|
-| destinationX | number      | `0`        | in pixels. |
-| destinationY | number      | `0`        | in pixels. |
-|      sourceX | number      | `0`        | in cells.  |
-|      sourceY | number      | `0`        | in cells.  |
-|  sourceWidth | number      | map width  | in cells.  |
-| sourceHeight | number      | map height | in cells.  |
-|  spriteSheet | SpriteSheet | SpriteMap  |            |
-
-
 ### `SFX`
 
 ```lua
