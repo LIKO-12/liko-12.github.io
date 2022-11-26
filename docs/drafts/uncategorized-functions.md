@@ -75,40 +75,6 @@ data = LoadData()
 |-------:|--------|-----------------------------------------------------|
 |   data | string | an empty string when no data has been saved before. |
 
-### `Sprite`
-
-```lua
-Sprite(spriteId, x, y, rotation, scaleX, scaleY, spriteSheet)
-```
-
-|   Parameter | Type        | Default     | Note                   |
-|------------:|-------------|-------------|------------------------|
-|    spriteId | number      | ⚠️ required |                        |
-|           x | number      | `0`         |                        |
-|           y | number      | `0`         |                        |
-|    rotation | number      | `0`         | in radians.            |
-|      scaleX | number      | `1`         | `1` to preserve scale. |
-|      scaleY | number      | `1`         | `1` to preserve scale. |
-| spriteSheet | SpriteSheet | SpriteMap   |                        |
-
-### `SpriteGroup`
-
-```lua
-SpriteGroup(spriteId, x, y, width, height, scaleX, scaleY, rotation, spriteSheet)
-```
-
-|   Parameter | Type        | Default     | Note                                      |
-|------------:|-------------|-------------|-------------------------------------------|
-|    spriteId | number      | ⚠️ required |                                           |
-|           x | number      | ⚠️ required |                                           |
-|           y | number      | ⚠️ required |                                           |
-|       width | number      | ⚠️ required | in sprites (cells).                       |
-|      height | number      | ⚠️ required | in sprites (cells).                       |
-|      scaleX | number      | `1`         | `1` to preserve scale.                    |
-|      scaleY | number      | `1`         | `1` to preserve scale.                    |
-|    rotation | number, nil | `nil`       | in radians. `nil` saves some performance. |
-| spriteSheet | SpriteSheet | SpriteMap   |                                           |
-
 ## `map`
 
 ```lua
