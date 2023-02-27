@@ -3,7 +3,7 @@ title: Drawing Shapes
 sidebar_position: 1
 ---
 
-For drawing images into the screen using code.
+For drawing shapes into the screen using code.
 
 ---
 
