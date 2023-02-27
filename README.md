@@ -12,13 +12,13 @@ It's built using [Docusaurus 2](https://docusaurus.io/), a modern static website
 - Node.js 16 LTS or later.
 - Yarn Classic 1.x (available in nodejs `corepack`).
 
-### Installing Dependencies
+### Installing dependencies
 
 ```sh
 yarn
 ```
 
-### Local Preview Server
+### Start local live preview server
 
 ```sh
 yarn start
@@ -26,6 +26,6 @@ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Deployment
+## Deployment
 
 Just push the changes into the main branch and a GitHub Actions workflow with automatically build and deploy the website to https://liko-12.github.io/.
