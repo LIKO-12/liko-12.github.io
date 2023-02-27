@@ -1,41 +1,31 @@
-# Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# LIKO-12's Official Website
 
-### Installation
+This is the source-code of LIKO-12's official website.
 
+It's built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+## Running the website locally
+
+### Requirements
+
+- Node.js 16 LTS or later.
+- Yarn Classic 1.x (available in nodejs `corepack`).
+
+### Installing Dependencies
+
+```sh
+yarn
 ```
-$ yarn
-```
 
-### Local Development
+### Local Preview Server
 
-```
-$ yarn start
+```sh
+yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Just push the changes into the main branch and a GitHub Actions workflow with automatically build and deploy the website to https://liko-12.github.io/.
