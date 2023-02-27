@@ -1,0 +1,5 @@
+label: 'Experimental'
+link:
+  title: Experimental
+  description: 'The documentation of the experimental releases of v2.'
+  type: generated-index
